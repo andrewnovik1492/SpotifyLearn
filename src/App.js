@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MainPage from "./pages/MainPage";
 import LoginPage from "./pages/LoginPage";
+import './styles/styles.scss'
 
 function App() {
   const [authToken, setAuthToken] = useState(false);

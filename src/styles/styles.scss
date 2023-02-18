@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+.navigation {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    flex: 1;
+    height: 100%;
+    background-color: grey;
+}
+
+.player-container {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+
+.home-logo {
+    display: flex;
+    div {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+.search-logo {
+    display: flex;
+    div {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+.media-logo {
+    display: flex;
+    div {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+
+.plus-logo {
+    display: flex;
+    div {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+
+.like-logo {
+    display: flex;
+    div {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+
+.playlist-container {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.451);
+    padding-top: 10px;
+    :hover {
+        color:  white;
+        cursor: pointer;
+    }
+}
+
+.text-form {
+    color: rgb(179, 177, 177);
+    font-family: 'Montserrat', sans-serif;
+    
+}
