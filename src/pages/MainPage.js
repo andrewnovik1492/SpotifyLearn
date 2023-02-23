@@ -1,7 +1,7 @@
 import NavigationPannel from "../components/NavigationPannel";
-import MainInfo from "../components/MainInfo";
 import Player from "../components/Player";
 import FlexContainer from "../components/styled/FlexContainer";
+import { Outlet } from "react-router-dom";
 
 
 function MainPage() {
@@ -9,7 +9,7 @@ function MainPage() {
         <FlexContainer align='flex-start' direction='column'>
             <FlexContainer justify='flex-start'>
                 <NavigationPannel/>
-                <MainInfo/>
+                <Outlet/>
             </FlexContainer>
             <Player/>
         </FlexContainer>

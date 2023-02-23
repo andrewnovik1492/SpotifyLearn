@@ -1,9 +1,11 @@
-const BaseLink = ({children}) => {
+import { Link } from "react-router-dom";
+
+const BaseLink = ({children, path}) => {
     
     return(
-        <p className="text-form">
+        <Link to={path} className="text-form">
             {children}
-        </p>
+        </Link>
     )
 }
 

@@ -22,11 +22,7 @@ const NavigationPannel = () => {
         })
 
     }, [])
-    function handleClick(e) {
-        console.log(e.target.innerText) ;
-        
-        
-      }
+    
     return(
         
         <section className="navigation">
@@ -35,36 +31,36 @@ const NavigationPannel = () => {
                 <NavigationBox>
                     <div className="home-logo">
                         <ReactSVG src={homelogo}/>
-                        <BaseLink>Main</BaseLink>
+                        <BaseLink path='/'>Main</BaseLink>
                     </div>
                     <div className="search-logo">
                         <ReactSVG src={searchlogo}/>
-                        <BaseLink>Search</BaseLink>   
+                        <BaseLink path='/search'>Search</BaseLink>   
                     </div>
                     <div className="media-logo">
                         <ReactSVG src={mediaLibrary}/>
-                        <BaseLink>Media Library</BaseLink>
+                        <BaseLink path='/library'>Media Library</BaseLink>
                     </div>
                 </NavigationBox>
                 <NavigationBox>
                     <div className="plus-logo">
                         <ReactSVG src={plus}/>
-                        <BaseLink>Create Playlist</BaseLink>
+                        <BaseLink path="/create">Create Playlist</BaseLink>
                     </div>
                     <div className="like-logo">
                         <ReactSVG src={like}/>
-                        <BaseLink>Like songs</BaseLink>
+                        <BaseLink path='/liked'>Like songs</BaseLink>
                     </div>
                 </NavigationBox>
                     
                 
                 </nav>
-            <div onClick={handleClick}  className="playlist-container">
+            <div className="playlist-container">
                 {
-                    playList.map((item) => {
+                    playList && playList.map((item) => {
                         return(
                             
-                                <BaseLink  key={item.id}>
+                                <BaseLink path={`/playlist/${item.id}`}  key={item.id}>
                                 {item.name}
                                 </BaseLink>
                             
